@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #111;
+  color: white;
+  overflow-x: hidden;
+}
+
+header {
+  text-align: center;
+  padding: 1rem;
+  background-color: #1f1f1f;
+}
+
+.logo {
+  width: 50px;
+  vertical-align: middle;
+}
+
+h1 {
+  display: inline;
+  margin-left: 10px;
+  font-size: 1.5rem;
+}
+
+.news-slide {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-half {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headline {
+  background-color: rgba(0,0,0,0.6);
+  padding: 1rem;
+  font-size: 2rem;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.bottom-half {
+  flex: 1;
+  background-color: #1e1e1e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 90%;
+}
+
+#scrollButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 768px) {
+  .headline {
+    font-size: 1.4rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+}
